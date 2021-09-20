@@ -1,0 +1,87 @@
+baseurl = "https://nicklasjohansen.github.io/DO2021/"
+DefaultContentLanguage = "en"
+#DefaultContentLanguage = "ja"
+title = "Datadrevet Organisationsanalyse"
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+publishDir = "docs"
+
+#pygmentsUseClassic = true
+#pygmentOptions = "linenos=inline"
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
+
+[Params]
+  homeTitle = "Datadrevet Organisationsanalyse" # Set a different text for the header on the home page
+  #subtitle = "A summer school by Center for Social Data Science"
+  logo = "img/ku_logo_uk_v.png"
+  favicon = "img/favicon.ico"
+  dateFormat = "January 2, 2006"
+  commit = false
+  rss = false
+  comments = false
+  readingTime = false
+  useHLJS = false
+  socialShare = false
+
+
+#[[Params.bigimg]]
+#  src = "img/triangle.jpg"
+#  desc = "Triangle"
+#[[Params.bigimg]]
+#  src = "img/sphere.jpg"
+#  desc = "Sphere"
+#  # position: see values of CSS background-position.
+#  position = "center top"
+#[[Params.bigimg]]
+#  src = "img/hexagon.jpg"
+#  desc = "Hexagon"
+
+[Author]
+  name = "Nicklas Johansen"
+  website = "https://nicklasjohansen.netlify.app/"
+  email = "nj@sodas.ku.dk"
+
+  # Menu links
+  [[menu.main]]
+      name = "Home"
+      url = ""
+      weight = 1
+  [[menu.main]]
+      identifier = "posts"
+      name = "Posts"
+      weight = 2
+  [[menu.main]]
+      name = "Læsning"
+      weight = 3
+      url = "page/læsning/"
+  [[menu.main]]
+      name = "Tidsplan"
+      weight = 4
+      url = "page/tidsplan/"
+
+  # Posts
+  [[menu.main]]
+      parent = "posts"
+      name = "Velkommen"
+      url = "post/velkommen/"
+      weight = 1
+  [[menu.main]]
+      parent = "posts"
+      name = "Install"
+      url = "post/install/"
+      weight = 2
+  [[menu.main]]
+      parent = "posts"
+      name = "Assignments"
+      url = "post/assignments/"
+      weight = 3
+  [[menu.main]]
+      parent = "posts"
+      name = "Eksamen"
+      url = "post/eksamen/"
+      weight = 4
